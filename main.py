@@ -2,6 +2,7 @@ import json
 import requests
 import unicodedata
 import pandas as pd
+from spacex_API_Falcon9 import rest_api
 
 static_json_url = "https://api.spacexdata.com/v4/launches/past"
 
@@ -35,5 +36,7 @@ print(landing_outcomes)
 # Check the value of 'None None'
 none_outcomes = df[df['fairings'] == '']
 print('fairings:', none_outcomes)
+
+rest_api()
 
 
