@@ -2,7 +2,7 @@ import json
 import requests
 import unicodedata
 import pandas as pd
-from spacex_API_Falcon9 import rest_api
+from spacex_API_scrapping import rest_api
 
 static_json_url = "https://api.spacexdata.com/v4/launches/past"
 
